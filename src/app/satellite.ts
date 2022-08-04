@@ -12,11 +12,18 @@ export class Satellite {
 		this.launchDate = launchDate;
 		this.orbitType = orbitType;
 		this.operational = operational;
-   }
+	}
 	
+	ngOnInit(){
+	}
+
 	isSpaceDebris(): boolean {
-		return true;
-   }
+		if (this.type === 'Space Debris'){
+			return true;
+		}else{
+			return false;
+		}
+	}
 
 }
 
